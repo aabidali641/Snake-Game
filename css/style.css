@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin:0;
+}
+
+.body{
+   /* background: url("../img/bg.jpg"); */
+   background: url("../img/snake2.jpg");
+   min-height:100vh;
+   background-size: 100vw 100vh;
+   background-repeat: no-repeat;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+#scoreBox{
+    position: absolute;
+    top:9px;
+    right:200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+
+}
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 150px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#soundBox{
+    position: absolute;
+    top:109px;
+    right: 230px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    display: flex;
+}
+#on{
+    position: absolute;
+    top:125px;
+    right:190px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#off{
+    position: absolute;
+    top:125px;
+    right:150px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#level{
+    position: absolute;
+    top:159px;
+    right: 230px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    display: flex;
+}
+#easy{
+    position: absolute;
+    top:179px;
+    right:180px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#medium{
+    position: absolute;
+    top:179px;
+    right:90px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#hard{
+    position: absolute;
+    top:183px;
+    right:33px;
+    font-size: 20px;
+    font-weight: bold;
+}
+    
+
+#board{
+    /* background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167)); */
+    background: linear-gradient(90deg,rgb(120, 222, 120),white, rgb(225, 225, 90));
+    width: 90vmin;
+    height: 92vmin;
+    border:2px solid black;
+    display:grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background: linear-gradient(rgb(160, 29, 29), rgb(220, 220, 28));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 5px;
+}
+
+.snake{
+    background: linear-gradient(rgb(148, 116, 245), rgb(225, 74, 150));
+    border: .25vmin solid rgb(21, 21, 21);
+    border-radius:7px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius:10px;
+}
